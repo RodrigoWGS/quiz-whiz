@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homenaje&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Homenaje', sans-serif;
+}
+
+body {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../images/backgroundImage.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* styles for the profile image  */
+.profileAvatar img {
+    width: 55px;
+    height: auto;
+}
+
+.profileAvatar {
+    margin: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* landing page  */
+.landing__screen .logo {
+    text-align: center;
+}
+
+.landing__screen .logo img {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 700px;
+    margin-top: 170px;
+}
+
+/********** styles for the main menu page **********/
+
+.main_menu {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.main_menu .game__logo .logo {
+    text-align: center;
+}
+
+.main_menu .game__logo .logo img {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 600px;
+    margin-top: 120px;
+}
+
+/* stylings for the buttons */
+.main_menu .wrapper .row .btn {
+    margin-top: 35px;
+    background-color: #0B4310;
+    color: #ffffff;
+    width: 180px;
+    height: 80px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    transform: scale(1);
+}
+
+.main_menu .wrapper .row .btn:hover {
+    transform: scale(1.1);
+    background-color: #106017;
+}
+
+.main_menu .wrapper .row .btn:nth-child(1) {
+    margin-right: 200px;
+}
+
+/********** styles for the game play pages **********/
+
+.gamePlay__screen {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.gamePlay__screen .game__logo{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 210px;
+}
+
+.gamePlay__screen .game__logo .logo {
+    margin: 15px;
+}
+
+.gamePlay__screen .game__logo .logo img {
+    margin: auto;
+    width: 200px;
+}
+
+.gamePlay__screen .game__logo .score__container {
+    width: 250px;
+    height: 40px;
+    padding: 20px;
+    background-color: #C5B5B5;
+    border: 3px solid #0B4310;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gamePlay__screen .game__logo .score__container h3{
+    color: #5A0A09;
+    font-size: 28px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.gamePlay__screen .game__logo h2{
+    color: #5A0A09;
+    font-size: 34px;
+    margin-top: 25px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.gamePlay__screen .game__wrapper .game img{
+    height: 350px;
+    width: auto;
+    margin-top: 15px;
+    border:3px solid #0B4310;
+    border-radius: 20px;
+}
+
+.gamePlay__screen .game__wrapper{
+    height: 350px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 2fr 1fr;
+    margin: auto;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.gamePlay__screen .game__wrapper .score__container {
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    margin-left: 20px;
+    background-color: #C5B5B5;
+    border: 3px solid #0B4310;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.gamePlay__screen .game__wrapper .score__container .table {
+    color: #5A0A09;
+    font-size: 28px;
+}
+
+.gamePlay__screen .answer__wrapper .btn__container{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gamePlay__screen .answer__wrapper .btn__container .icon__image img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    transform: scale(1);
+}
+
+.gamePlay__screen .answer__wrapper .btn__container .icon__image img:hover {
+    transform: scale(1.1);
+}
+
+.gamePlay__screen .btn {
+    margin-top: 15px;
+    background-color: #0B4310;
+    color: #ffffff;
+    width: 180px    ;
+    height: 60px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    transform: scale(1);
+}
+
+.gamePlay__screen .btn:hover {
+    transform: scale(1.1);
+    background-color: #106017;
+    color: #ffffff;
+}
+
+.gamePlay__screen h2{
+    margin-top: 4px;
+}
+
+/********** styles for the level up, game won, game lost pages **********/
+
+.score__screen {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.score__screen .game__logo .logo {
+    text-align: center;
+}
+
+.score__screen .game__logo .logo img {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 450px;
+    margin-top: 120px;
+}
+
+.score__screen .game__logo h2{
+    font-family: 'Iceland', sans-serif;
+    font-size: 76px;
+    color: #5A0A09;
+
+}
+
+.score__screen .wrapper .score__container {
+    width: 300px;
+    padding: 20px;
+    background-color: #C5B5B5;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.score__screen .wrapper .score__container h3{
+    color: #5A0A09;
+    font-size: 28px;
+}
+
+.score__screen .wrapper .score__boardtxt p{
+    margin-top: 15px;
+    margin-left: 180px;
+    font-size: 20px;
+    font-style: italic;
+    color: #5A0A09;
+}
+
+/* stylings for the image buttons */
+.score__screen .wrapper .btn__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score__screen .wrapper .btn__container .icon__image img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    transform: scale(1);
+}
+
+.score__screen .wrapper .btn__container .icon__image p{
+    font-size: 20px;
+    color: #5A0A09;
+    font-weight: bold;
+    margin-top: -18px;
+}
+
+.score__screen .wrapper .btn__container .icon__image img:hover {
+    transform: scale(1.1);
+}
+
+/********** styles for the instructions pages **********/
+
+.instructions__screen {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.instructions__screen .game__logo .logo {
+    text-align: center;
+}
+
+.instructions__screen .game__logo .logo img {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 250px;
+    margin-top: 80px;
+}
+
+.instructions__screen .wrapper .score__container {
+    width: 800px;
+    height: 300px;
+    padding: 20px;
+    background-color: #C5B5B5;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+/* stylings for the image buttons */
+.instructions__screen .wrapper .btn__container {
+    width: 100%;
+}
+
+.instructions__screen .wrapper .btn__container .icon__image img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+    transform: scale(1);
+}
+
+.instructions__screen .wrapper .btn__container .icon__image img:hover {
+    transform: scale(1.1);
+}
+
+.instructions__screen .wrapper .game img{
+    height: 250px;
+    width: auto;
+    margin-top: 15px;
+    border:2px solid #C5B5B5;
+    border-radius: 20px;
+}
+
+.instructions__screen .wrapper .row{
+    margin-top: -10px;
+}
+
+/********** styles for the user authentication pages **********/
+
+.authentication__screens {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: -35px;
+}
+
+.authentication__screens .game__logo .logo {
+    text-align: center;
+}
+
+.authentication__screens .game__logo .logo img {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 300px;
+    margin-top: 80px;
+}
+
+.authentication__screens .game__logo h2{
+    font-size: 30px;
+    color: #5A0A09;
+    margin-top: 15px;
+    margin-bottom: 20px;    
+}
+
+.authentication__screens .game__logo .profileIcon img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.authentication__screens .wrapper .quick__links  p{
+    text-align: right;
+    margin-top: 15px;
+    margin-left: 180px; 
+    font-size: 20px;
+    font-style: italic;
+    color: #5A0A09;
+}
+
+
+.authentication__screens .wrapper .score__container {
+    width: 800px;
+    height: 300px;
+    padding: 20px;
+    background-color: #C5B5B5;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+/* stylings for the image buttons */
+.authentication__screens .wrapper .btn__container {
+    width: 100%;
+}
+
+.authentication__screens .wrapper .btn__container .icon__image img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+    transform: scale(1);
+}
+
+.authentication__screens .wrapper .btn__container .icon__image img:hover {
+    transform: scale(1.1);
+}
+
+.authentication__screens .wrapper .input__box {
+    border: 2px solid #D9D9D9;
+    padding: 8px;
+    border-radius: 20px;
+    background-color: #C5B5B5;
+    margin-bottom: 25px;
+  }
+  
+  .authentication__screens .wrapper .input__box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 18px;
+    color: #5A0A09;
+    background: transparent; 
+  }
+  
+  .authentication__screens .wrapper .input__box input::placeholder {
+    color: #5A0A09;
+  }
+
+  .authentication__screens .wrapper .authentication__btn .btn{
+    margin-left: 240px;
+    margin-top: 7px;
+  }
+
+/********** styles for the buttons **********/
+ .btn {
+    margin-top: 35px;
+    background-color: #0B4310;
+    color: #ffffff;
+    width: 180px    ;
+    height: 60px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    transform: scale(1);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #106017;
+}
+
+.row .btn:nth-child(1) {
+    margin-right: 200px;
+}
+
+
+/********** stylings for the pre loader  **********/
+.loading__container .loading__text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5A0A09;
+}
+
+.loading__container {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 150px;
+    z-index: 99999;
+    /* background: rgba(255, 255, 255, 0.596); */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading__container .loader {
+    position: relative;
+    width: 90px;
+    margin-left: 18px;
+}
+
+.loading__container .loader span {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.loading__container .loader span:nth-child(1) {
+    left: 0%;
+    top: 51%;
+    animation: loader 1s infinite;
+    background: #5A0A09;
+    /* box-shadow: 0 0 10px #5A0A09, 0 0 40px #5A0A09; */
+}
+
+.loading__container .loader span:nth-child(2) {
+    left: 30%;
+    top: 51%;
+    animation: loader 1s 0.2s infinite;
+    background: #7D0D0D;
+    /* box-shadow: 0 0 10px #7D0D0D, 0 0 40px #7D0D0D; */
+}
+
+.loading__container .loader span:nth-child(3) {
+    left: 60%;
+    top: 51%;
+    animation: loader 1s 0.4s infinite;
+    background: #A11110;
+    /* box-shadow: 0 0 10px #A11110, 0 0 40px #A11110; */
+}
+
+.loading__container .loader span:nth-child(4) {
+    left: 90%;
+    top: 51%;
+    animation: loader 1s 0.6s infinite;
+    background: #B31312;
+    /* box-shadow: 0 0 10px #B31312, 0 0 40px #B31312; */
+}
+
+@keyframes loader {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    50% {
+        transform: translate(-50%, -150%);
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+.star-rating {
+	white-space: nowrap;
+}
+.star-rating [type="radio"] {
+	appearance: none;
+}
+.star-rating i {
+	font-size: 1.2em;
+	transition: 0.3s;
+}
+
+.star-rating label:is(:hover, :has(~ :hover)) i {
+	transform: scale(1.35);
+	color: #fffdba;
+	animation: jump 0.5s calc(0.3s + (var(--i) - 1) * 0.15s) alternate infinite;
+}
+.star-rating label:has(~ :checked) i {
+	color: #faec1b;
+	text-shadow: 0 0 2px #ffffff, 0 0 10px #ffee58;
+}
+
+@keyframes jump {
+	0%,
+	50% {
+		transform: translatey(0) scale(1.35);
+	}
+	100% {
+		transform: translatey(-15%) scale(1.35);
+	}
+}
